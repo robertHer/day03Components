@@ -5,20 +5,16 @@
 
 
 <div class="container">
-    <div class="row">
-        <br>
-        <div class="col-md">
+    <button class="btn btn-success" (click)="selectComponent()">
+   press </button>
+    <div class="row" *ngIf="randomComponent">
+       
             
-            <success-message></success-message>
-        </div>
-        <br>
-        <div class="col-md">
-            <warning-message></warning-message>
-        </div>
-        <br>
-        <div class="col-md">
-                <danger-message></danger-message>
+            <success-message *ngIf="!index"></success-message>
+       
+            <warning-message *ngIf="index == 1"></warning-message>
+      
+                <danger-message *ngIf="index == 2"></danger-message>
             
-          </div>
-        </div>
+        
       </div>
