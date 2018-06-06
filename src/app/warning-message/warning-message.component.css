@@ -1,0 +1,11 @@
+div.dropdown-content{
+    background-color: #f0ad4e;
+    border: 1px solid #eea236;
+    border-radius: 5px;
+    width: 50%;
+    margin-top: 5px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
